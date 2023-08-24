@@ -1,0 +1,42 @@
+.line-container {
+    position: relative;
+    width: 15%;
+    margin: 1% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1.5px solid #000;
+}
+
+.box-container {
+    position: absolute;
+    height: 1.5vh;
+    width: 20%;
+    margin: -1% auto;
+    border-radius: 25px;
+    background-color: #e63c22;
+}
+
+@media screen and (max-width:800px) {
+    .line-container {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .line-container {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .line-container {
+        width: 23%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .line-container {
+        width: 40%;
+    }
+}

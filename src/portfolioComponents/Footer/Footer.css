@@ -1,0 +1,117 @@
+.footer-container {
+    width: 100%;
+    margin-top: 15%;
+}
+
+.footer-line-container {
+    height: 0.5vh;
+    width: 100%;
+    background-color: #e63c22;
+}
+
+.footer-detail-container {
+    width: 100%;
+    background-color: #02020b;
+}
+
+.footer-name-container {
+    width: 100%;
+    padding-top: 3%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e63c22;
+    letter-spacing: 0.3rem;
+}
+
+.footer-nav-container {
+    width: 60%;
+    margin: 3% auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+}
+
+.nav-link {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 1rem;
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #e63c22;
+    border: 1px solid #e63c22;
+}
+
+.social-media-container2 {
+    margin: 3% auto;
+}
+
+.social-media-container2 a i {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 1%;
+}
+
+.footer-mail-container,
+.footer-phone-container {
+    margin-bottom: 0.5%;
+    color: #e63c22;
+    font-size: 1rem;
+}
+
+.footer-mail-container span,
+.footer-phone-container span {
+    margin-left: 0.3%;
+}
+
+.footer-copyright-container {
+    margin-top: 3%;
+    padding-bottom: 5%;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .footer-nav-container {
+        height: 40vh;
+        margin: 2% auto;
+        flex-direction: column;
+    }
+    .nav-link {
+        border: none;
+        padding: 0%;
+        margin-bottom: 25%;
+        align-items: center;
+    }
+    .nav-link:hover {
+        border: none;
+        border-radius: 0px;
+        padding-bottom: 5%;
+        border-bottom: 2px solid #e63c22;
+        transition: all 0.3s;
+    }
+    .social-media-container2 {
+        margin: 5% auto;
+    }
+    .social-media-container2 a i {
+        margin-left: 5%;
+    }
+    .footer-copyright-container {
+        margin-top: 10%;
+        padding-bottom: 15%;
+    }
+    .footer-mail-container {
+        margin-top: 10%;
+    }
+    .footer-phone-container {
+        margin-top: 3%;
+    }
+}

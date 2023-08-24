@@ -1,0 +1,268 @@
+.resume-container {
+    width: 100%;
+}
+
+.resume-details-container {
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume-list-container {
+    width: 35%;
+    box-shadow: 10px 0 10px -10px #393838;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume-menus {
+    height: 40vh;
+    width: 15%;
+    padding: 15% 0%;
+    list-style: none;
+    line-height: 3rem;
+    background-color: #1e1f30;
+}
+
+.resume-menus li {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.resume-items {
+    width: 80%;
+    list-style: none;
+    line-height: 3rem;
+}
+
+.resume-items li {
+    width: 80%;
+    padding-left: 10%;
+    font-weight: 600;
+    text-align: left;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+}
+
+.active {
+    color: #fff;
+    background-color: #1e1f30;
+    transition: 0.5s ease-in-out;
+}
+
+.resume-list-detail-container {
+    height: 50vh;
+    width: 60%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+.resume-list-details li {
+    margin-left: 10%;
+    text-align: left;
+    padding-left: 1%;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #e63c22;
+}
+
+.resume-list-detailss li {
+    margin-left: 10%;
+    text-align: left;
+    padding-left: 1%;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #e63c22;
+}
+
+.resume-list-items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.year-button {
+    width: 15%;
+    padding: 2% 3%;
+    border-radius: 25px;
+    border: none;
+    background-color: #e63c22;
+    color: #fff;
+}
+
+.list-items {
+    width: 80%;
+}
+
+.resume-list-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.education {
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.project-description {
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1040px) {
+    .resume-list-text {
+        font-size: 1rem;
+    }
+    .resume-list-items {
+        gap: 2rem;
+    }
+    .resume-list-detail-container {
+        width: 70%;
+    }
+    .education {
+        font-size: 0.8rem;
+    }
+    .year-button {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .resume-menus {
+        padding: 30% 0%;
+    }
+    .resume-items li {
+        width: 90%;
+        padding: 0% 5%;
+    }
+    .resume-list-details {
+        width: 100%;
+    }
+    .resume-list-items {
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .resume-list-details li {
+        margin-left: 12%;
+    }
+    .list-items {
+        width: 100%;
+    }
+    .education {
+        margin-top: -5%;
+    }
+    .year-button {
+        margin-left: -20%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .resume-details-container {
+        flex-direction: column;
+    }
+    .resume-list-container {
+        height: 10vh;
+        width: 100%;
+        box-shadow: none;
+    }
+    .resume-items {
+        display: none;
+    }
+    .resume-menus {
+        padding: 0%;
+        height: 1vh;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .resume-menus li {
+        height: auto;
+        padding: 0% 8%;
+        font-size: 1.5rem;
+        color: #1e1f30;
+        cursor: pointer;
+    }
+    .resume-menus li.icon-active {
+        color: #fff;
+        background-color: #1e1f30;
+    }
+    .resume-list-detail-container {
+        width: 100%;
+        margin: 8% auto;
+    }
+    .resume-list-items {
+        gap: 1rem;
+    }
+    .resume-list-text {
+        font-size: 1.5rem;
+    }
+    .education {
+        font-size: 1rem;
+        margin-top: 0%;
+    }
+    .year-button {
+        margin-left: -15%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .resume-list-text {
+        font-size: 1.2rem;
+    }
+    .education {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .resume-list-text {
+        font-size: 1rem;
+    }
+    .education {
+        font-size: 0.8rem;
+    }
+    .year-button {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .resume-list-container {
+        width: 80%;
+    }
+    .list-items {
+        width: 100%;
+    }
+    .year-button {
+        width: 40%;
+        padding: 3%;
+        margin-left: -15%;
+    }
+}

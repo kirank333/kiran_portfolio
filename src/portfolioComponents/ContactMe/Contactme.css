@@ -1,0 +1,135 @@
+.contact-me-container {
+  width: 100%;
+}
+
+.contact-me-background-container {
+  width: 80%;
+  height: auto;
+  margin: 5% auto;
+  border-radius: 25px;
+  background-color: #000107;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-container {
+  width: 100%;
+  height: 100%;
+}
+
+.mail-header {
+  color: #fff;
+  padding: 3% 5%;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.social-media-container1 {
+  margin: 8% 0.5%;
+}
+
+.social-media-container1 a i {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 1%;
+}
+
+.mail-text {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.mail-image-container {
+  height: 25vh;
+  width: 100%;
+  margin: 5% auto;
+  border-radius: 10px;
+}
+
+.mail-image-container > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.right-container {
+  width: 100%;
+  height: 100%;
+}
+
+.mail-container {
+  width: 90%;
+  height: 80%;
+  border-radius: 10px;
+  margin: 10% auto 5% auto;
+  background-color: #fff;
+}
+
+.up-button {
+  padding: 1.5%;
+  border: none;
+  border-radius: 8px;
+  margin-top: -9%;
+  margin-right: 3%;
+  font-size: 1rem;
+  background-color: #e63c22;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+  background: linear-gradient(to top, #e63c22 50%, #ffffff 150%);
+  background-color: transparent;
+  background-size: 200% 100%;
+  background-position: top right;
+  transition: all 0.7s ease-out;
+}
+
+.up-button:hover {
+  color: #1e1f30;
+  font-size: 1.3rem;
+  margin-top: -10%;
+  background-position: bottom left;
+}
+
+.arrows {
+  animation: arrows 1s infinite;
+}
+
+@keyframes arrows {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+    color: #f16a6a;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-me-background-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-me-container {
+    margin-top: 25%;
+  }
+  .contact-me-background-container {
+    border-radius: 10px;
+  }
+  .mail-text {
+    font-size: 1.2rem;
+  }
+  .mail-image-container {
+    height: 20vh;
+  }
+  .up-button {
+    margin-top: -13%;
+    margin-right: 2%;
+  }
+}
